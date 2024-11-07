@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/scrollingAnimation.js"></script>
+    <script  defer src="/revealScrollAnimation.js"></script>
+    <script src="https://kit.fontawesome.com/3ea9055280.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!--barra superior de navegação-->
+     <nav class="navigation">
+      <img src="/public/images/logo.png" alt="FitClub Logo" id="logo">
+      <ul id="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#section-review">Community</a></li>
+      </ul>
+      <button id="join" class="btn">Join Now</button>
+     </nav>
+      <header id="home">
+      <section>
+        <h4>BEST FITNESS IN THE TOWN</h4>
+        <h1><span>MAKE</span> YOUR BODY SHAPE</h1>
+        <p>Unleash your potential and embark on a journey towards a stranger, filter, and more confident you. Sign up for 'Make Your Body Shape' now and witness the incredible transformation your body is capable of!</p>
+        <div>
+          <button class="btn">Get Started</button>
+        <h2>FITNESS</h2>
+        </div>
+      </section>
+      <section id="section-image">
+        <span>O</span>
+        <img src="/public/images/header.png" alt="homem malhando">
+      </section>
+      </header>
+      <main>
+        <article>
+          <!--sessão do que é o programa-->
+          <section id="program">
+            <h2>EXPLORE OUR PROGRAM</h2>
+            <div>
+              <button id="left-button"><img src="/public/icons/seta-esquerda.png" alt="seta esquerda"></button>
+            <button id="right-button"><img src="/public/icons/seta-direita.png" alt="seta direita"></button> 
+            </div>
+          </section>
+          <section class="section-cards reveal">
+            <ul class="list-cards">
+              <li>
+                <img src="/public/icons/motivacao.png" alt="Strength" class="card-image">
+                <h3>Strength</h3>
+                <p>Embrace the essence of strength as we delve into its varous dimensions phsical, mental, and emotional.</p>
+                <a>Join now<img></a>
+                
+              </li>
+              <li>
+                <img src="/public/icons/ginastica.png" alt="Physical Fitness"
+                class="card-image">
+                <h3>Physical Fitness</h3>
+                <p>It encompasses a range of activies that improve health, strength, flexbility, and overallwell-being.</p>
+                <a>Join now<img></a>
+              </li>
+              <li>
+                <img src="/public/icons/corrida.png" alt="Fat Lose" class="card-image">
+                <h3>Fat Lose</h3>
+                <p>Through a combination of workout routines and expert guidance, we'll empower you to reach your goals.</p>
+                <a>Join now<img></a>
+              </li>
+              <li>
+                <img src="/public/icons/cesta-de-compras.png" alt="Weight Gain" class="card-image">
+                <h3>Weight Gain</h3>
+                <p>Designed for individuals, our program affers an effective approach to gaining weight in a sustainable manner.</p>
+                <a>Join now<img></a>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article id="class">
+          <section class="reveal">
+            <img src="/public/images/class-1.jpg" alt="homem se exercitando" id="class-one">
+            <img src="/public/images/class-2.jpg" alt="outro homem se exercitando" id="class-two">
+          </section>
+          <section>
+            <!--sessão de classe-->
+            <h2>THE CLASS YOU WILL GET HERE</h2>
+            <p>Lead by our team of expert and motivational instructors, "The Class You Will Get Here" is a high-energy. results-driven session that combines a perfect blend of cardio, strength training, and functional exercieses. Each class is carefully curated to keep you engaged and challenged, ensuring you never hit your fitness endeavors.
+            </p>
+            <button class="btn">Book A Class</button>
+          </section>
+        </article>
+        <article id="About">
+          <!--sessão sobre nós-->
+          <section id="section-join">
+            <h2>WHY JOIN US ?</h2>
+            <p>Our diverse membership base creates a friendly and supportive atmosphere, where you can make friends and stay motivated.</p>
+            <img src="/public/images/join.jpg" alt="Join" class="reveal">
+            <ul>
+              <li>
+                <img src="/public/icons/favoritos.png" alt="personal trainer" class="card-image">
+                <div>
+                  <h3>Personal Trainer</h3>
+                <p>Unlock your potential with our expert Personal Trainers.</p>
+                </div>
+              </li>
+              <li>
+                <img src="/public/icons/camera-de-video.png" alt="camera" class="card-image">
+                <div>
+                  <h3>Pratice Sessions</h3>
+                <p>Elevate your fitness with pratice sessions</p>
+                </div>
+              </li>
+              <li>
+                <img src="/public/icons/edificios.png" alt="edificil" class="card-image">
+                <div>
+                  <h3>Good Management</h3>
+                <p>Supportive management, for your fitness sucess</p>
+                </div>
+
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!--sessão demostrativa dos planos e o que inclui em cada plano-->
+        <article id="service" >
+          <section  id="section-price">
+            <h2>OUR PRICING PLAN</h2>
+            <p >Our pricing plan omes with membership tiers, each taliored to cater to diferente preferences and fitness aspirations</p>
+          </section>
+          <section class="reveal" >
+            <section class="cards">
+              <h3>Basic Plan</h3>
+              <h4>$16</h4>
+              <ul>
+                <li><img src="/public/icons/ok.png" alt="check"> Smart Workout plan</li>
+                <li><img src="/public/icons/ok.png" alt="check"> At home workouts</li>
+              </ul>
+              <button>Join Now</button>
+            </section>
+            <section class="cards">
+              <h3>Weeklyn Plan</h3>
+              <h4>$25</h4>
+              <ul>
+                <li><img src="/public/icons/ok.png" alt="check"> PRO Gyms</li>
+                <li><img src="/public/icons/ok.png" alt="check"> Smart Workout plan</li>
+                <li><img src="/public/icons/ok.png" alt="check"> At home workouts</li>
+              </ul>
+              <button>Join Now</button>
+            </section>
+            <section class="cards">
+              <h3>Monthly Plan</h3>
+              <h4>$45</h4>
+              <ul>
+                <li><img src="/public/icons/ok.png" alt="check"> ELITE Gyms & Classes</li>
+                <li><img src="/public/icons/ok.png" alt="check"> PRO Gyms</li>
+                <li><img src="/public/icons/ok.png" alt="check"> Smart Workout plan</li>
+                <li><img src="/public/icons/ok.png" alt="check"> At home workouts</li>
+                <li><img src="/public/icons/ok.png" alt="check"> Personal Training</li>
+              </ul>
+                <button>Join Now</button>
+            </section>
+          </section>
+        </article>
+        <article>
+      </main>
+      <!--área de reviews dos usuários cadastrados-->
+      <section id="section-review">
+        <h2>Member Review</h2>
+        <p>What truly this gym apart is their expert team of trainers. The trainers are knowledgeable, approachable, and genuinely invested in helping members achive their fitness goals. They take the time to understand individual needs and create personalized workout plans, ensuaring maximum results and safety. </p>
+       <ul>
+        <li>
+          <img src="/public/icons/estrela.png" alt="">
+          <img src="/public/icons/estrela.png" alt="">
+          <img src="/public/icons/estrela.png" alt="">
+          <img src="/public/icons/estrela.png" alt="">
+          <img src="/public/icons/estrela.png" alt="">
+        </li>
+       </ul>
+       <article>
+        <section>
+          <img src="/public/images/member.jpg" alt="">
+          <div id="">
+            <h4>Jane Cooper</h4>
+          <p>Software Developer</p>
+          </div>
+        </section>
+        <div class="buttons">
+          <button ><img src="/public/icons/seta-esquerda-hover.png" alt="seta esquerda"></button>
+        <button ><img src="/public/icons/seta-direita-hover.png" alt="seta direita"></button> 
+        </div>
+      </article>
+      </section>
+    </article>
+    <!--footer-->
+    <footer>
+      <section id="section-network">
+        <img src="/public/images/logo.png" alt="">
+        <p>Take the frist step towards a heathier, stronger you with our unbeatable pricing plans. Let's sweat, achive, and conquer together!</p>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="section-info">
+        <ul>
+          <h4>Company</h4>
+          <li>Business</li>
+          <li>Franchise</li>
+          <li>Partnership</li>
+          <li>Network</li>
+        </ul>
+        <ul>
+          <h4>About Us</h4>
+          <li>Blogs</li>
+          <li>Security</li>
+          <li>Careers</li>
+        </ul>
+        <ul>
+          <h4>Contact</h4>
+          <li>Contact Us</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+          <li>BMI Calculator</li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,768 @@
+/*Estilização mobile first*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+body {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: var(--body-color);
+}
+
+:root {
+  --body-color: #111317;
+  --text-color: #ffffff;
+  --primary-color: #1f2125;
+  --primary-color-hover: #35373b;
+  --second-color: #f9ac54;
+  --second-color-hover: #d79447;
+  --paragraph-list-color: #d1d5db;
+}
+
+#logo {
+  width: 100px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 2em 0 2em;
+}
+#navlist {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  flex-direction: row;
+  list-style: none;
+  z-index: 1;
+  gap: 2em;
+  opacity: 0;
+}
+
+#navlist li {
+  height: 100%;
+  border: 2px solid transparent;
+}
+#navlist li:hover {
+  border-bottom: 2px solid var(--second-color-hover);
+}
+#navlist li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.btn {
+  background-color: var(--second-color);
+  padding: 0.8em 1.75em;
+  border: transparent;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: var(--second-color-hover);
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  margin: 0.2em 0.6em;
+}
+header section {
+  width: 48%;
+  margin: 4em 0;
+}
+header section h4 {
+  color: var(--second-color-hover);
+}
+header section h1 {
+  font-size: 23px;
+}
+header section p {
+  width: 180%;
+  font-size: 10px;
+  margin: 4em 0 1em 0;
+}
+header h1 span {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ffffff;
+  color: var(--body-color);
+}
+header section div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.2em;
+}
+header section div button {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  height: 20px;
+  margin-top: 0.55em;
+}
+header section div h2 {
+  color: var(--primary-color);
+  position: absolute;
+  margin-left: 3.1em;
+  top: 245px;
+  font-size: 30px;
+}
+main {
+  margin: 0.2em;
+}
+#section-image {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0 0 0;
+}
+#section-image span {
+  color: #d7944730;
+  height: 100px;
+  font-size: 170px;
+  position: relative;
+  bottom: 55px;
+  margin-left: 0;
+}
+#section-image img {
+  height: 200px;
+  position: absolute;
+}
+article {
+  margin: 2em 0 2em 0;
+}
+article section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.3em;
+}
+article section div {
+  display: flex;
+}
+article section h2 {
+  font-size: 20px;
+}
+article section div button {
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0 1.25em 2em;
+}
+
+article section div button:hover {
+  border: 2px solid var(--second-color-hover);
+}
+article section div button img {
+  width: 100%;
+  opacity: 0;
+}
+#left-button {
+  background-image: url("/public/icons/seta-esquerda.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+#left-button:hover {
+  background-image: url("/public/icons/seta-esquerda-hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+
+#right-button {
+  background-image: url("/public/icons/seta-direita.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+#right-button:hover {
+  background-image: url("/public/icons/seta-direita-hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+
+.list-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1em 0 0 0;
+}
+.list-cards li {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  width: 43%;
+  padding: 0.5em;
+  font-size: 10px;
+  margin-top: 0.5em;
+}
+.list-cards li:hover {
+  background-color: var(--primary-color-hover);
+  border: 2px solid var(--second-color-hover);
+}
+.card-image {
+  background-color: var(--second-color-hover);
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 0.4em;
+}
+.list-cards li h3 {
+  margin: 0.5em 0 0.5em 0;
+}
+.list-cards a {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.list-cards a {
+  background-image: url("/public/icons/seta-direita.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  margin: 1em 0 1em 0;
+}
+.list-cards a:hover {
+  color: var(--second-color-hover);
+  background-image: url("/public/icons/seta-direita-hover.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+#class {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 9em 0 9em 0;
+}
+#class section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-left: 0.2em;
+}
+
+#class-one {
+  width: 67%;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 4em;
+  bottom: 290px;
+}
+#class-two {
+  width: 50%;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 235px;
+  margin-left: 1em;
+}
+#class section {
+  display: flex;
+  align-items: flex-start;
+}
+#class section h2 {
+  width: 100%;
+  font-size: 20px;
+  margin-right: 2em;
+}
+#class section p {
+  width: 90%;
+  font-size: 12px;
+  margin: 1em 0 7em 0;
+}
+#class button {
+  margin-left: 8em;
+  margin-top: 13em;
+}
+#section-join {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: -13em 0 0 0;
+}
+#section-join p {
+  width: 80%;
+  font-size: 12px;
+  margin: 0.2em;
+}
+#section-join img {
+  width: 80%;
+  border-radius: 15px;
+  position: relative;
+  margin: 2em 0 2em 0;
+}
+#section-join ul {
+  width: 75%;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  position: absolute;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 15em;
+}
+#section-join ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section-join ul li div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#section-join ul li img {
+  border-radius: 5px;
+  width: 15px;
+  height: 15px;
+}
+#section-join ul li h3 {
+  font-size: 13px;
+}
+#section-join ul li p {
+  width: 90%;
+  font-size: 9px;
+  text-align: center;
+}
+#section-price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12em;
+}
+#section-price p {
+  width: 100%;
+  text-align: center;
+  margin: 1em 0 3em 0;
+}
+article section {
+  display: flex;
+  flex-direction: column;
+}
+.cards {
+  background-color: var(--primary-color);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  align-items: flex-start;
+  padding: 1.5em;
+}
+.cards:hover {
+  background-color: var(--primary-color-hover);
+  border: 2px solid var(--second-color-hover);
+}
+.cards h4 {
+  width: 100%;
+  font-size: 30px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 1em;
+}
+.cards ul {
+  height: 300px;
+  list-style: none;
+  margin-top: 1em;
+}
+.cards ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.cards ul li img {
+  width: 25px;
+  margin-right: 1em;
+}
+.cards button {
+  background-color: transparent;
+  color: var(--second-color-hover);
+  width: 100%;
+  border: 2px solid var(--second-color-hover);
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#section-review {
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  padding: 0.2em;
+}
+#section-review h2 {
+  position: relative;
+  bottom: 500px;
+}
+#section-review p {
+  color: var(--paragraph-list-color);
+  text-align: start;
+  width: 75%;
+  margin: 1em 0 3em 0;
+}
+#section-review ul {
+  list-style: none;
+}
+#section-review img {
+  width: 25px;
+}
+#section-review article {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+#section-review article img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#section-review article div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+#section-review article div p {
+  color: var(--paragraph-list-color);
+  width: 100%;
+  font-size: 11px;
+  margin: 0;
+}
+#section-review .buttons {
+  background-color: transparent;
+  width: 25px;
+  position: relative;
+  top: 400px;
+  right: 230px;
+  display: flex;
+  flex-direction: row;
+}
+#section-review .buttons img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.buttons button {
+  background-color: transparent;
+  width: 25;
+  border: none;
+  margin-left: 3em;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0.2em;
+}
+
+#section-network {
+  width: 80%;
+  margin-left: 3em;
+}
+#section-network p {
+  color: var(--paragraph-list-color);
+  font-size: 12px;
+  width: 100%;
+}
+#section-network ul {
+  list-style: none;
+  display: flex;
+  margin-left: 1em;
+}
+#section-network li a {
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--second-color);
+  border-radius: 50%;
+  margin: 2em 1em 0 1em;
+}
+#section-network li a:hover {
+  background-color: var(--second-color);
+}
+#section-network li a i {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--second-color);
+}
+#section-network li a i:hover {
+  color: #ffffff;
+}
+
+#section-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+  margin-left: 5em;
+}
+#section-info h4 {
+  margin-bottom: 2em;
+}
+#section-info ul {
+  list-style: none;
+  margin: 0 3em 0 3em;
+}
+#section-info ul li {
+  color: var(--paragraph-list-color);
+  font-size: 12px;
+  margin: 1em 0 0.5em 0;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: 3s;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*media queries para estilização no padrão desktop*/
+@media screen and (min-width: 1024px) {
+  body {
+    min-width: 100vh;
+    min-height: 100%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 10em;
+  }
+  #navlist {
+    display: flex;
+    align-items: center;
+    position: relative;
+    opacity: 1;
+  }
+  #logo {
+    width: 150px;
+  }
+
+  header {
+    margin: 3em 10em;
+  }
+  header section h1 {
+    font-size: 86px;
+  }
+  header section div h2 {
+    top: 558px;
+    margin-left: 3.5em;
+    font-size: 120px;
+  }
+  #section-image {
+    margin: 1em 4em 0 0;
+  }
+  #section-image span {
+    height: 555px;
+    font-size: 500px;
+    bottom: 170px;
+    margin-left: 0.35em;
+  }
+  #section-image img {
+    height: 555px;
+    margin-left: 12.5em;
+  }
+  header section p {
+    width: 100%;
+    font-size: 15.5px;
+    margin: 0em;
+  }
+  header section div button {
+    font-size: 13.3px;
+    height: 40px;
+    margin-top: 0.55em;
+  }
+  article section {
+    margin: 0;
+  }
+  article section h2 {
+    font-size: 40px;
+  }
+  article section div button {
+    width: 35px;
+    height: 35px;
+  }
+  main {
+    margin: 3em 10em;
+  }
+  .list-cards {
+    width: 100%;
+    display: flex;
+    margin: 2em 0 0 0;
+  }
+  .list-cards li {
+    width: 20%;
+    font-size: 16px;
+    padding: 1em;
+  }
+  #class {
+    display: flex;
+    flex-direction: row;
+    margin: 9em 0 9em 0;
+  }
+  #class section {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: auto;
+    align-items: flex-start;
+    margin-left: 1em;
+  }
+
+  #class-one {
+    width: 87%;
+    border-radius: 15px;
+    position: relative;
+    bottom: 0;
+    margin-left: 3em;
+  }
+  #class-two {
+    width: 65%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    margin-top: 16em;
+    margin-left: 0;
+  }
+  #class section h2 {
+    width: 80%;
+    font-size: 40px;
+    margin-right: 2em;
+  }
+  #class section p {
+    font-size: 16px;
+    margin: 1em 0 7em 0;
+  }
+  #class button {
+    margin-top: 0;
+  }
+  #section-join {
+    margin: 10em 0 5em 0;
+  }
+  #section-join p {
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+  }
+  #section-join img {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    margin: 3em;
+  }
+  #section-join ul {
+    width: 76%;
+    margin-top: 37em;
+  }
+  #section-join ul li {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #section-join ul li img {
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+  }
+  #section-join ul li h3 {
+    font-size: 19px;
+  }
+  #section-join ul li p {
+    width: 70%;
+    font-size: 12px;
+    text-align: left;
+  }
+  #section-price {
+    margin: 0;
+  }
+  #section-price p {
+    width: 50%;
+    margin: 1em 0 3em 0;
+  }
+  article section {
+    display: flex;
+    flex-direction: row;
+  }
+  .cards {
+    background-color: var(--primary-color);
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    align-items: flex-start;
+    padding: 1.5em;
+  }
+  #section-review {
+    width: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3em;
+    padding: 2em 15em;
+  }
+  #section-review h2 {
+    position: relative;
+    bottom: 450px;
+  }
+  #section-review h2 {
+    position: static;
+    bottom: 0;
+  }
+  #section-review p {
+    color: var(--paragraph-list-color);
+    text-align: start;
+    width: 80%;
+    margin: 1em 0 3em 0;
+  }
+  #section-review .buttons {
+    background-color: transparent;
+    width: 25px;
+    position: static;
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 10em;
+  }
+
+  #section-network {
+    margin: 0;
+  }
+  #section-network ul {
+    margin-left: 0;
+  }
+  #section-info {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5em;
+    margin-left: 0;
+  }
+}
