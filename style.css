@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   color: var(--text-color);
+  box-sizing: border-box;
 }
 body {
   min-width: 100%;
@@ -30,7 +31,6 @@ nav {
   margin: 1em 2em 0 2em;
 }
 #navlist {
-  height: 100%;
   position: fixed;
   top: 0;
   flex-direction: row;
@@ -80,7 +80,7 @@ header section h1 {
   font-size: 23px;
 }
 header section p {
-  width: 180%;
+  width: 100%;
   font-size: 10px;
   margin: 4em 0 1em 0;
 }
@@ -165,26 +165,26 @@ article section div button img {
   opacity: 0;
 }
 #left-button {
-  background-image: url("/public/icons/seta-esquerda.png");
+  background-image: url("/src/img/icons/seta-esquerda.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
 }
 #left-button:hover {
-  background-image: url("/public/icons/seta-esquerda-hover.png");
+  background-image: url("/src/img/icons/seta-esquerda-hover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
 }
 
 #right-button {
-  background-image: url("/public/icons/seta-direita.png");
+  background-image: url("/src/img/icons/seta-direita.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
 }
 #right-button:hover {
-  background-image: url("/public/icons/seta-direita-hover.png");
+  background-image: url("/src/img/icons/seta-direita-hover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
@@ -228,7 +228,7 @@ article section div button img {
   cursor: pointer;
 }
 .list-cards a {
-  background-image: url("/public/icons/seta-direita.png");
+  background-image: url("/src/img/icons/seta-direita.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 15px;
@@ -236,7 +236,7 @@ article section div button img {
 }
 .list-cards a:hover {
   color: var(--second-color-hover);
-  background-image: url("/public/icons/seta-direita-hover.png");
+  background-image: url("/src/img/icons/seta-direita-hover.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 15px;
@@ -252,6 +252,7 @@ article section div button img {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  text-align: center;
   justify-content: center;
   margin-left: 0.2em;
 }
@@ -280,7 +281,7 @@ article section div button img {
   margin-right: 2em;
 }
 #class section p {
-  width: 90%;
+  width: 100%;
   font-size: 12px;
   margin: 1em 0 7em 0;
 }
