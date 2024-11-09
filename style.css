@@ -165,26 +165,26 @@ article section div button img {
   opacity: 0;
 }
 #left-button {
-  background-image: url("/src/img/icons/seta-esquerda.png");
+  background-image: url("./src/img/icons/seta-esquerda.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
 }
 #left-button:hover {
-  background-image: url("/src/img/icons/seta-esquerda-hover.png");
+  background-image: url("./src/img/icons/seta-esquerda-hover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
 }
 
 #right-button {
-  background-image: url("/src/img/icons/seta-direita.png");
+  background-image: url("./src/img/icons/seta-direita.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
 }
 #right-button:hover {
-  background-image: url("/src/img/icons/seta-direita-hover.png");
+  background-image: url("./src/img/icons/seta-direita-hover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
@@ -228,7 +228,7 @@ article section div button img {
   cursor: pointer;
 }
 .list-cards a {
-  background-image: url("/src/img/icons/seta-direita.png");
+  background-image: url("./src/img/icons/seta-direita.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 15px;
@@ -236,7 +236,7 @@ article section div button img {
 }
 .list-cards a:hover {
   color: var(--second-color-hover);
-  background-image: url("/src/img/icons/seta-direita-hover.png");
+  background-image: url("./src/img/icons/seta-direita-hover.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 15px;
